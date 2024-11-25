@@ -22,9 +22,35 @@
             max-width: 800px;
         }
         .profile-image {
-            max-width: 150px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+        .profile-name {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .profile-email {
+            text-align: center;
+            font-size: 14px;
+            color: #007bff;
+            margin-top: 5px;
+        }
+        .profile-email a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .profile-email a:hover {
+            text-decoration: underline;
+        }
+        a.professor-name {
+            text-decoration: underline;
+            color: #007bff;
+        }
+        a.professor-name:hover {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -32,38 +58,31 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Wenjin Zhang</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#manuscripts">Working Manuscripts</a>
-                </li>
-            </ul>
-        </div>
     </div>
 </nav>
 
-<div id="home" class="container">
+<div class="container">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 text-center">
             <img src="images/profile.png" class="img-fluid profile-image" alt="Profile Picture">
+            <p class="profile-name">Wenjin Zhang</p>
+            <p class="profile-email"><a href="mailto:wenjinzhang@mail.ustc.edu.cn">wenjinzhang@mail.ustc.edu.cn</a></p>
         </div>
         <div class="col-md-9">
-            <h3>Hi, everyone! Welcome to my homepage.</h3>
+            <h3>Greetings! Welcome to my personal homepage!</h3>
             <p>
-                I am currently a senior student in the School of Mathematical Sciences at the University of Science and Technology of China (USTC), majoring in Mathematics and Applied Mathematics. Along with my undergraduate studies, I have worked on three main research projects. Under the guidance of Professor Weijing Tang (Carnegie Mellon University) and Professor Yinqiu He (University of Wisconsin-Madison), I investigated network community size inference using spectral methods. I also collaborated with Professor Yuqi Gu (Columbia University) to extend the Stepwise Goodness-of-Fit (StGoF) method for mixture models and spectral clustering. Additionally, I worked with Professor Yuqi Gu and Professor Yixin Wang (University of Michigan) on causal discovery for latent attributes, leveraging scalable algorithms for theoretical and empirical analysis. Currently, I am co-authoring a working manuscript on the StGoF method.
+                I am currently a senior student in the School of Mathematical Sciences at the University of Science and Technology of China (USTC), majoring in Mathematics and Applied Mathematics. I am broadly interested in various fields of statistics and statistical methods, aiming to balance rigorous mathematical proofs with practical application effectiveness.
+            </p>
+            <p>
+                Since my junior year, I have been advised by Professor <a href="https://sites.google.com/andrew.cmu.edu/weijingtang/home" target="_blank" class="professor-name">Weijing Tang</a> and Professor <a href="https://www.yinqiuhe.com/" target="_blank" class="professor-name">Yinqiu He</a> on inference on community size. Additionally, I have been guided by Professor <a href="https://stat.columbia.edu/~yuqigu/" target="_blank" class="professor-name">Yuqi Gu</a> on extending the Stepwise Goodness-of-Fit (StGoF) method from DCBM to sub-exponential mixtures. I have also been mentored by Professor <a href="https://stat.columbia.edu/~yuqigu/" target="_blank" class="professor-name">Yuqi Gu</a> and Professor <a href="https://yixinwang.github.io/" target="_blank" class="professor-name">Yixin Wang</a> on causal discovery for latent attributes.
             </p>
         </div>
     </div>
     <h4>Working Manuscripts</h4>
     <ul>
         <li>
-            <strong>Stepwise Goodness-of-Fit (StGoF) Method:</strong> Developed in collaboration with Professor Yuqi Gu to improve estimation of mixture models under latent block structures. <a href="files/StGoF.pdf" target="_blank">View Manuscript</a>
+            In collaboration with <a href="https://stat.columbia.edu/~yuqigu/" target="_blank" class="professor-name">Professor Yuqi Gu</a>, I have extended the Stepwise Goodness-of-Fit method, initially designed for DCBM, to sub-exponential mixtures under certain conditions. This work includes theoretical proofs and validation through simulations. The method is currently undergoing further refinement.
+            <a href="files/StGoF.pdf" target="_blank">View Manuscript</a>
         </li>
     </ul>
     <hr>
