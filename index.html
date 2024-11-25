@@ -1,81 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="initial-scale=1,width=device-width">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-lpiAoS6W+WCMzSpq61oxH1h9VraQDxNiG2jz/Fa1iEpswSPbxz/8ABzQk65OrM2O" crossorigin="anonymous"></script>
-	<meta name="description" content="Wenjin Zhang's Personal Website">
-	<meta name="keywords" content="Wenjin Zhang, homepage, blog, personal site">
-	<meta name="author" content="Wenjin Zhang">
-	<title>Wenjin Zhang's Personal Website</title>
-	<style>
-		body {
-			font-family: 'Arial', sans-serif;
-			line-height: 1.6;
-			background-color: #f8f9fa;
-		}
-		h3, h4 {
-			color: #007bff;
-		}
-		.navbar-brand {
-			font-weight: bold;
-		}
-		.list-group-item a {
-			text-decoration: none;
-			color: #007bff;
-		}
-		.list-group-item a:hover {
-			text-decoration: underline;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenjin Zhang's Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-lpiAoS6W+WCMzSpq61oxH1h9VraQDxNiG2jz/8ABzQk65OrM2O" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        h3, h4 {
+            color: #000;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .profile-image {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top p-3">
-	<div class="container-fluid">
-		<a class="navbar-brand text-xl" href="./">Wenjin Zhang's Personal Website</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse text-lg" id="navbarText">
-			<ul class="navbar-nav ms-auto me-2">
-				<li class="nav-item">
-					<a class="nav-link active" href="./">About Me</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./contact.html">Contact</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./friends.html">Links</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Wenjin Zhang</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#manuscripts">Working Manuscripts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
-<div class="container p-5">
-	<h3>Hello!</h3>
-	<br>
-	<section>
-		<header>
-			<h4 class="my-4">About Me</h4>
-		</header>
-		<p>Welcome to my personal website. I’m Wenjin Zhang, a mathematician and researcher passionate about causal inference and machine learning.</p>
-	</section>
-	<hr>
-	<h4 class="my-4">Useful Links</h4>
-	<div class="row my-4">
-		<div class="col-md-6">
-			<ul class="list-group">
-				<li class="list-group-item">
-					<a href="https://github.com/primehomology" target="_blank">
-						<img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" width="16" height="16">
-						My GitHub Profile
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<hr>
+
+<div id="home" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="images/profile.png" class="img-fluid profile-image" alt="Profile Picture">
+        </div>
+        <div class="col-md-9">
+            <h3>Hi, everyone! Welcome to my homepage.</h3>
+            <p>
+                I am currently a senior student in the School of Mathematical Sciences at the University of Science and Technology of China (USTC), majoring in Mathematics and Applied Mathematics. Along with my undergraduate studies, I have worked on three main research projects. Under the guidance of Professor Weijing Tang (Carnegie Mellon University) and Professor Yinqiu He (University of Wisconsin-Madison), I investigated network community size inference using spectral methods. I also collaborated with Professor Yuqi Gu (Columbia University) to extend the Stepwise Goodness-of-Fit (StGoF) method for mixture models and spectral clustering. Additionally, I worked with Professor Yuqi Gu and Professor Yixin Wang (University of Michigan) on causal discovery for latent attributes, leveraging scalable algorithms for theoretical and empirical analysis. Currently, I am co-authoring a working manuscript on the StGoF method.
+            </p>
+        </div>
+    </div>
+    <h4>Working Manuscripts</h4>
+    <ul>
+        <li>
+            <strong>Stepwise Goodness-of-Fit (StGoF) Method:</strong> Developed in collaboration with Professor Yuqi Gu to improve estimation of mixture models under latent block structures. <a href="files/StGoF.pdf" target="_blank">View Manuscript</a>
+        </li>
+    </ul>
+    <hr>
+    <h4>Teaching Assistant Experience</h4>
+    <ul>
+        <li><strong>Real Analysis (H)</strong> (Spring 2024), Instructor: Prof. Guangbin Ren</li>
+        <li><strong>Introduction to Machine Learning</strong> (Autumn 2024), Instructors: Prof. Xiang Wang, Prof. Xiangnan He</li>
+    </ul>
 </div>
 </body>
 </html>
+
