@@ -1,2 +1,2 @@
-# primehomology.github.io
+# wenjinzhang.github.io
 my personal website
